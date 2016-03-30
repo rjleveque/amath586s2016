@@ -23,7 +23,8 @@ to download the notebook (or find it in the :ref:`class_repos`, in the `codes`
 directory).
 
 You will need a recent version of Jupyter in order to run an `Jupyter
-notebook <http://jupyter-notebook.readthedocs.org/en/latest/>`_ 
+notebook <http://jupyter-notebook.readthedocs.org/en/latest/>`_.
+See also :ref:`software`.
 
 Notebooks can be found in `$AM586/codes/` if you want to run the notebook.  
 

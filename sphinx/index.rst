@@ -25,10 +25,8 @@ Contents
 .. toctree::
    :maxdepth: 2
 
+   software
    codes
-   clawpack
-   notes
-   lectures
 
 .. toctree::
    :maxdepth: 2

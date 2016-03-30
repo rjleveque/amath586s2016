@@ -28,7 +28,7 @@ TA
 
   * Office hours: 
 
-    - On campus: Monday 12:00-1:00, Wednesday 11:00-12:00.
+    - In Lewis 129: Monday 12:00-1:00, Wednesday 11:00-12:00.
     - On GoToMeeting: Wednesday 12:00-1:00.
       See `Canvas page <https://canvas.uw.edu/courses/1038268/pages/gotomeeting>`_ for
       connection information.
