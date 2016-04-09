@@ -1,0 +1,179 @@
+\documentclass[10pt]{article}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amsfonts,amssymb}
+
+\usepackage{hyperref}  % for urls and hyperlinks
+
+
+\setlength{\textwidth}{6.2in}
+\setlength{\oddsidemargin}{0.3in}
+\setlength{\evensidemargin}{0in}
+\setlength{\textheight}{8.9in}
+\setlength{\voffset}{-1in}
+\setlength{\headsep}{26pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+
+
+
+\input{../latex/macros.tex}  % input some useful macros
+
+\begin{document}
+
+% header:
+\hfill\vbox{\hbox{AMath 586 / ATM 581}
+\hbox{Homework \#2}\hbox{Due Thursday, April 14, 2016}}
+
+\vskip 5pt
+
+Homework is due to Canvas by 11:00pm PDT on the due date.
+
+To submit, see
+\url{https://canvas.uw.edu/courses/1038268/assignments/3254815}
+
+
+%--------------------------------------------------------------------------
+
+%--------------------------------------------------------------------------
+\vskip 1cm
+\hrule
+{\bf Problem 1}
+
+Which of the following Linear Multistep Methods are convergent?  For 
+the ones that are not, are they inconsistent, or not zero-stable, or both?
+ \begin{enumerate}
+ \item $U^{n+3} = U^{n+1} + 2kf(U^n)$,
+ \item $U^{n+2} = \half U^{n+1} + \half U^{n} + 2kf(U^{n+1})$,
+ \item $\unp = U^n$, 
+ \item $U^{n+4} = U^{n} + \frac 4 3 k(f(U^{n+3})+f(U^{n+2})+f(U^{n+1}))$,
+ \item $U^{n+3} = -U^{n+2} + U^{n+1} +U^{n}+2k(f(U^{n+2})+f(U^{n+1}))$.
+ \end{enumerate}
+
+
+
+% uncomment the next two lines if you want to insert solution...
+%\vskip 1cm
+%{\bf Solution:}
+
+% insert your solution here!
+
+
+%--------------------------------------------------------------------------
+\vskip 1cm
+\hrule
+{\bf Problem 2}
+
+
+Consider the IVP
+\begin{equation*}
+\begin{split}
+u_1' &= 2u_1,\\
+u_2' &= 3u_1 + 2u_2,
+\end{split}
+\end{equation*}
+with initial conditions specified at time $t=0$.  Solve this problem in two
+different ways:
+
+\begin{enumerate}
+\item Solve the first equation, which only involves $u_1$, and then insert
+this function into the second equation to obtain a nonhomogeneous linear
+equation for $u_2$.  Solve this using (5.8).
+
+\item Write the system as $u' = Au$ and compute the matrix exponential using
+(D.35) to obtain the solution.  (See Appendix C.3 for a discussion of the
+Jordan Canonical form in the defective case.)
+\end{enumerate}
+
+
+% uncomment the next two lines if you want to insert solution...
+%\vskip 1cm
+%{\bf Solution:}
+
+% insert your solution here!
+
+
+%--------------------------------------------------------------------------
+\vskip 1cm
+\hrule
+{\bf Problem 3}
+
+\begin{enumerate}
+\item Determine the general solution to the linear difference equation
+$U^{n+2} = U^{n+1} + U^n$.
+
+\item Determine the solution to this difference equation with the starting
+values $U^0=1$, $U^1=1$.  Use this to determine $U^{30}$?  
+(Note, these are the {\em Fibonacci numbers}, which of course should all be
+integers.)
+
+\item Show that for large $n$ the ratio of successive Fibonacci numbers
+$U^n/U^{n-1}$ approaches the ``golden ratio'' $\phi \approx 1.618034$.
+\end{enumerate} 
+
+% uncomment the next two lines if you want to insert solution...
+%\vskip 1cm
+%{\bf Solution:}
+
+% insert your solution here!
+
+
+
+%--------------------------------------------------------------------------
+\newpage
+%\vskip 1cm
+\hrule
+{\bf Problem 4}
+
+
+Perform numerical experiments to confirm the claims made in Example 7.11 on
+page 160, by comparing the performance of Forward Euler and the Midpoint
+methods for different choices of parameters.  In particular, you might want
+to try $a=1$ and compare $b=0$ with $b=1$ over $0\leq t \leq 10$, but feel
+free to experiment and perhaps find other values that illustrate this better.
+Explore how each method behaves for different grid resolutions in each case.
+
+Compute the exact solution to this system (e.g. using the matrix
+exponential) so that you can plot the true solution along with the computed
+solution for various cases.
+
+% uncomment the next two lines if you want to insert solution...
+%\vskip 1cm
+%{\bf Solution:}
+
+% insert your solution here!
+
+
+%--------------------------------------------------------------------------
+\vskip 1cm
+\hrule
+{\bf Problem 5}
+
+Implement the 3rd order 3-step Adams-Bashforth method for the linearized
+pendulum problem from Problem 4.  As starting values, try the
+following two choices:
+
+\begin{enumerate} 
+\item Use Forward Euler to compute $U^1$ and then Midpoint to compute $U^2$
+from $U^0$ and $U^1$.
+
+\item Use the 2-stage Runge-Kutta method (5.32) to compute $U^1$ and also to
+compute $U^2$.
+\end{enumerate}
+
+In each case, what global order of accuracy do you observe at some fixed
+time? (E.g. $t=10$ with parameters $a=1,~b=0.2$)?  Estimate this by solving
+the problem with several different grid resolutions.
+
+In each case, explain why the global order you observe agrees with what
+should be expected.
+
+% uncomment the next two lines if you want to insert solution...
+%\vskip 1cm
+%{\bf Solution:}
+
+% insert your solution here!
+
+
+\end{document}
+
