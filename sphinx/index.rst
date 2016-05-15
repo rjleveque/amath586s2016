@@ -27,6 +27,7 @@ Contents
 
    software
    codes
+   lectures
 
 .. toctree::
    :maxdepth: 2
