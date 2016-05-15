@@ -10,7 +10,7 @@ Homework 5
 Due by 11:00pm on May 26, 2016.
 
 **Note:** Submit a pdf file via the Canvas assignment page
-`Homework 5 <https://canvas.uw.edu/courses/1038268/assignments/2869615>`_.
+`Homework 5 <https://canvas.uw.edu/courses/1038268/assignments/3279572>`_.
 
 - `hw5.pdf <_static/hw5.pdf>`_  
 
