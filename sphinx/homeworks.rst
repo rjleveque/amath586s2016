@@ -22,7 +22,7 @@ Schedule (tentative)
 * :ref:`homework4` due Tuesday, May 10
 * Midterm: Friday, May 13  
 * :ref:`homework5` due Thursday, May 26
-* Take-home final due Thursday, June 9
+* :ref:`final` due Thursday, June 9
 
 
 
