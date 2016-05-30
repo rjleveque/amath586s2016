@@ -179,8 +179,10 @@ i.e. $U_{m+1}^{n+1} = U_{m+1}^{n} - \frac{ak}{h}(U_{m+1}^n - U_m^n)$.
 You should find that this works better than the method in (b).
 
 \item Finally try using the Beam-Warming method at the right boundary.
-You might think this would work best of all, but instead you may observe
-instability.
+Note that this should work better than upwind. Compute the max-norm of the
+error at the final time $T=1$ to confirm this.
+(You could plot the error at each time and animate this if you want to see
+better how the errors behave, but not required.)
 
 \end{enumerate} 
 
