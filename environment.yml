@@ -1,0 +1,6 @@
+name: am586-environment
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - matplotlib
